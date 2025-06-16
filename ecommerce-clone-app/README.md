@@ -1,7 +1,7 @@
 # React + Vite
 
-Amazon Clone 🛒
-This project is a clone of the Amazon website built as part of my learning journey to strengthen my front-end and back-end web development skills.
+E-commerce Clone App 🛒
+This project is a full-stack Amazon-style e-commerce web app developed using React built as part of my learning journey to strengthen my front-end and back-end web development skills.
 
 🔧 Tech Stack
 React.js – Front-end framework
