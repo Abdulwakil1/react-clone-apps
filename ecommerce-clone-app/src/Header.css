@@ -1,0 +1,354 @@
+/* Section 1: Header Layout */
+
+.header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 4000;
+  /* overflow-x: auto; */
+}
+
+/* Section 2: Header Flexbox Configuration */
+.header__left,
+.header__middle,
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__left {
+  flex: 1;
+}
+
+.header__middle {
+  flex: 2;
+  justify-content: center;
+}
+
+.header__right {
+  flex: 1.5;
+  justify-content: space-evenly;
+}
+
+/* Section 3: Header Logo */
+.header__logo {
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 18px;
+}
+
+/* Uses class stacking */
+.header__logo--hoverEffect {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  padding: 6px 4px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  /* transition: border-color 0.3s ease; */
+}
+
+.header__logo--hoverEffect:hover {
+  border-color: white; /* White border on hover */
+}
+
+/* Address group styling */
+.header__addressGroup {
+  display: flex;
+  align-items: center;
+  margin-left: 0; /* Space between logo and address */
+  border: 1px solid transparent; /* Border that changes color on hover */
+  border-radius: 2px;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 14px;
+  padding-right: 4px;
+}
+.header__addressGroup:hover {
+  border-color: white;
+}
+
+.header__locationIcon {
+  color: white;
+  /* font-size: 24px; */
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.header__addressText {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  margin: 0;
+}
+
+/* Section 4: Basket and Navigation */
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+}
+
+.header__basketCount {
+  position: absolute;
+  margin-left: 2px;
+  margin-right: 1px;
+  top: 1px;
+  left: 15px;
+  color: #f08804;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 0; /* Adjust spacing between nav items */
+  letter-spacing: 0.00005rem;
+  padding: 0px;
+  /* margin-left: 0px; */
+}
+
+/* Section 5: Header Options */
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 6px 4px;
+
+  border: 1px solid transparent;
+  border-radius: 2px;
+  /* transition: border-color 0.3s ease; Smooth transition for border color change */
+}
+
+.header__option:hover {
+  border-color: white;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+}
+
+.header__optionBasketGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 2px 6px;
+  border: 1px solid transparent;
+}
+
+.header__link:hover .header__optionBasketGroup {
+  border-color: white;
+  border-radius: 2px;
+}
+.header__optionLineOne {
+  font-size: 11px;
+}
+.header__optionLineTwo {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  margin-right: auto;
+  cursor: pointer;
+
+  /* min-width: 300px; */
+  /* display: flex; */
+  /* align-items: center;  */
+}
+
+.header__searchInput {
+  height: 40px;
+  border: none;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-indent: 4px;
+  font-size: 16px;
+  margin-left: 10px;
+  /* padding-left: 10px; */
+}
+
+.header__searchInput::placeholder {
+  text-indent: 6px;
+}
+
+.header__searchIcon {
+  background-color: #cd9042;
+  padding: 0 10px;
+  height: 40px !important;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+}
+
+/* section 6: Language switcher  */
+.header__languageSwitcher {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 8px 6px;
+  border: 1px solid transparent;
+}
+
+.header__languageCurrent {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__languageIcon {
+  font-size: 20px;
+}
+
+.header__languageText {
+  margin-left: 4px;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+  font-weight: 800;
+}
+
+.header__dropdownIcon {
+  margin-left: 4px;
+  color: gray;
+  font-size: 8px;
+  position: relative;
+  top: 4px;
+}
+
+.header__languageSwitcher:hover {
+  border-color: white;
+  border-radius: 2px;
+}
+
+.header__dropdownWrapper {
+  position: relative;
+}
+
+.header__dropdownArrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  position: absolute;
+  top: 10px; /* Adjust to position the arrow correctly */
+  right: -4px; /* Adjust based on where the arrow should point */
+  z-index: 2999;
+}
+
+.header__dropdown {
+  position: absolute;
+  top: 16px; /* Adjust this value to move the dropdown downwards */
+  left: -65px; /* Adjust this value to move the dropdown to the right */
+  right: -156px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  z-index: 3000;
+  display: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+  background-color: #fff;
+}
+
+.header__languageSwitcher:hover .header__dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.header__dropdownOption span {
+  margin-left: 8px;
+}
+
+.header__dropdownOption {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  cursor: pointer;
+  color: black;
+  font-size: 14px;
+}
+.header__dropdownOptionText {
+  margin-left: 8px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.header__dropdownOption.link {
+  padding-left: 31px;
+  color: #0073e6;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.header__dropdownOption.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #e68922;
+}
+
+.header__dropdownOption:hover .header__dropdownOptionText {
+  color: #e68922;
+  text-decoration: underline;
+  text-decoration-color: #e68922;
+}
+
+.header__dropdown hr {
+  border: none;
+  border-top: 0.5px solid #ddd;
+  margin: 8px 0; /* Vertical spacing */
+  width: 82%; /* Make the line shorter */
+  margin-left: auto;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .header__option {
+    padding: 1px 3px;
+    margin: 3px;
+  }
+
+  .header__languageSwitcher {
+    margin: 0 5px;
+  }
+}

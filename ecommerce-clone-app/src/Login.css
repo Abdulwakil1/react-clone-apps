@@ -1,0 +1,119 @@
+.login {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.login__container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+.login__container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.login__container > form > h5 {
+  margin-bottom: 5px;
+}
+.login__container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+  border-radius: 4px;
+  text-indent: 4px;
+  border: 1px solid gray;
+}
+
+.login__container > p {
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 1.5 !important;
+  margin-top: 18px !important;
+}
+
+.login__logo {
+  margin: 20px 0;
+  width: 100px;
+  object-fit: contain;
+}
+
+.login__signInButton {
+  background-color: #f4d669;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 5px;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  color: #111;
+  cursor: pointer;
+}
+.login__signInButton:hover {
+  background-color: #cfa438;
+}
+
+/* registration message */
+.login__newUserMessage {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* .login__hrLeft {
+  flex: 1;
+  margin: 0 5px; 
+  border: none; 
+ 
+}
+
+.login__hrRight {
+  flex: 1;
+  margin: 0 5px;
+  border: none;
+
+} */
+.login__hrLeft,
+.login__hrRight {
+  flex: 1;
+  margin: 0 5px; /* Combined margin for both left and right */
+  border: none; /* Remove the default border */
+  border-top: 1px solid #ccc; /* Custom thickness and color */
+}
+
+.login__text {
+  margin: 0;
+  color: #767676;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.login__registerButton {
+  margin-top: 10px;
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  padding: 6px 0;
+
+  width: 100%; /* Ensure full-width button */
+  height: 30px; /* Consistent height with Sign In button */
+  color: #111; /* Text color to match Sign In button */
+  cursor: pointer;
+}
+.login__registerButton:hover {
+  background-color: #f0f4f6;
+}
+
+.login__feedback {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
