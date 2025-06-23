@@ -1,0 +1,37 @@
+/**
+ * Global CSS rules for the application.
+ *
+ * This stylesheet defines the fundamental styles applied across the entire app.
+ * It includes settings for smooth scrolling, consistent box sizing, and responsive typography.
+ * The purpose of these rules is to ensure a cohesive and user-friendly interface.
+ *
+ * @module index.css
+ */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for better user experience */
+}
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+body {
+  background-color: #040714; /* Sets a dark background color for the app */
+  color: #f9f9f9; /* Sets a light text color for contrast against the dark background */
+  font-family: Avenir-Roman, sans-serif; /* Defines the primary font family */
+  margin: 0; /* Removes default margin from the body */
+  text-decoration: none; /* Ensures text has no decoration by default */
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px; /* Sets font size for larger screens */
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    font-size: 15px; /* Sets font size for medium screens */
+  }
+}
+@media only screen and (min-width: 479px) {
+  body {
+    font-size: 14px; /* Sets font size for smaller screens */
+  }
+}
