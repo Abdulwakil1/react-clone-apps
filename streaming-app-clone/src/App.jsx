@@ -1,3 +1,10 @@
+/**
+  Project: Streaming Clone App (Educational Project)
+  Tech Stack: React, Redux, Firebase (Auth + Firestore), Styled Components
+  Disclaimer: This project is for educational purposes only and is not affiliated with,
+  endorsed by, or connected to any real-world streaming companies.
+*/
+
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
